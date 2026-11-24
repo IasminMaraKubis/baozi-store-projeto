@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+!pragma layout smetana
+actor "Usuário da API" as Usuario
+rectangle "API REST - Baozi Store" {
+    usecase "Cadastrar cliente" as C1
+    usecase "Listar clientes" as C2
+    usecase "Consultar cliente por ID" as C3
+    usecase "Excluir cliente" as C4
+    usecase "Cadastrar produto" as P1
+    usecase "Listar produtos" as P2
+    usecase "Consultar produto por ID" as P3
+    usecase "Excluir produto" as P4
+    usecase "Cadastrar pedido" as D1
+    usecase "Listar pedidos" as D2
+    usecase "Consultar pedido por ID" as D3
+    usecase "Excluir pedido" as D4
+}
+Usuario -- C1
+Usuario -- C2
+Usuario -- C3
+Usuario -- C4
+Usuario -- P1
+Usuario -- P2
+Usuario -- P3
+Usuario -- P4
+Usuario -- D1
+Usuario -- D2
+Usuario -- D3
+Usuario -- D4
+@enduml
